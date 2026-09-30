@@ -1,0 +1,743 @@
+
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    color: #333;
+
+    background-color: #ffffff;
+
+    line-height: 1.6;
+}
+
+
+.container {
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+}
+
+
+
+/* =========================================
+   CABEÇALHO
+   ========================================= */
+
+.cabecalho {
+    background-color: #ffffff;
+
+    height: 90px;
+
+    border-bottom: 1px solid #eeeeee;
+
+    position: relative;
+
+    z-index: 10;
+}
+
+
+.cabecalho-conteudo {
+    height: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+
+/* LOGO */
+
+.logo img {
+    display: block;
+
+    width: 180px;
+
+    height: 70px;
+
+    object-fit: contain;
+}
+
+
+
+/* MENU */
+
+.menu {
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+.menu a {
+    text-decoration: none;
+
+    color: #333333;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.menu a:hover {
+    color: #2e8b57;
+}
+
+
+
+/* BOTÃO WHATSAPP DO MENU */
+
+.menu-whatsapp {
+    background-color: #25d366;
+
+    color: #ffffff !important;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+
+.menu-whatsapp:hover {
+    background-color: #1ebe5d;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* =========================================
+   BANNER PRINCIPAL
+   ========================================= */
+
+.hero {
+    position: relative;
+
+    min-height: 520px;
+
+    background-image: url("images/hero-pets-felizes.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+
+/* CAMADA SOBRE A FOTO */
+
+.hero-overlay {
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.35);
+}
+
+
+
+/* CONTEÚDO */
+
+.hero-conteudo {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.hero-texto {
+    max-width: 600px;
+
+    color: #ffffff;
+}
+
+
+.hero h1 {
+    font-size: 48px;
+
+    line-height: 1.15;
+
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+
+/* =========================================
+   BOTÃO WHATSAPP
+   ========================================= */
+
+.botao-whatsapp {
+    display: inline-block;
+
+    background-color: #25d366;
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    padding: 14px 25px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.botao-whatsapp:hover {
+    background-color: #1ebe5d;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* =========================================
+   SOBRE NÓS
+   ========================================= */
+
+.sobre {
+    padding: 80px 0;
+
+    background-color: #ffffff;
+}
+
+
+.sobre-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+
+
+/* IMAGEM */
+
+.sobre-imagem {
+    width: 100%;
+
+    height: 380px;
+
+    overflow: hidden;
+
+    border-radius: 14px;
+}
+
+
+.sobre-imagem img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.4s;
+}
+
+
+.sobre-imagem:hover img {
+    transform: scale(1.03);
+}
+
+
+
+/* TEXTO */
+
+.sobre-texto h2 {
+    font-size: 36px;
+
+    color: #222;
+
+    margin-bottom: 20px;
+}
+
+
+.sobre-texto p {
+    color: #666;
+
+    font-size: 16px;
+
+    margin-bottom: 18px;
+}
+
+
+
+/* =========================================
+   SERVIÇOS
+   ========================================= */
+
+.servicos {
+    padding: 80px 0;
+
+    background-color: #fafafa;
+}
+
+
+.servicos h2 {
+    text-align: center;
+
+    font-size: 36px;
+
+    margin-bottom: 10px;
+
+    color: #222;
+}
+
+
+.subtitulo {
+    text-align: center;
+
+    color: #777;
+
+    margin-bottom: 50px;
+}
+
+
+
+/* GRID */
+
+.servicos-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+
+/* =========================================
+   CARD DO SERVIÇO
+   ========================================= */
+
+.servico {
+    background-color: #ffffff;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    padding-bottom: 25px;
+
+    transition: 0.3s;
+}
+
+
+.servico:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+
+/* =========================================
+   IMAGENS DOS SERVIÇOS
+   ========================================= */
+
+.servico-imagem {
+    width: 100%;
+
+    height: 200px;
+
+    overflow: hidden;
+}
+
+
+.servico-imagem img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.4s;
+}
+
+
+.servico:hover .servico-imagem img {
+    transform: scale(1.05);
+}
+
+
+
+/* =========================================
+   TEXTO DOS CARDS
+   ========================================= */
+
+.servico h3 {
+    font-size: 22px;
+
+    margin: 20px 15px 10px;
+
+    color: #222;
+}
+
+
+.servico p {
+    color: #777;
+
+    font-size: 15px;
+
+    margin: 0 20px 20px;
+}
+
+
+
+/* LINK DO SERVIÇO */
+
+.servico a {
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: #2e8b57;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.servico a:hover {
+    color: #246b43;
+}
+
+
+
+/* =========================================
+   CONTATO
+   ========================================= */
+
+.contato {
+    background-color: #f2faf5;
+
+    text-align: center;
+
+    padding: 70px 0;
+}
+
+
+.contato h2 {
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+
+.contato p {
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+
+
+/* ENDEREÇO */
+
+.endereco {
+    color: #555 !important;
+
+    font-weight: bold;
+
+    margin-bottom: 25px !important;
+}
+
+
+
+/* =========================================
+   REDES SOCIAIS
+   ========================================= */
+
+.redes-sociais {
+    padding: 18px 0;
+
+    background-color: #ffffff;
+}
+
+
+.redes-links {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.icone-social {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 32px;
+
+    height: 32px;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    color: #777;
+
+    background-color: #f3f3f3;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.icone-social:hover {
+    color: #ffffff;
+
+    background-color: #2e8b57;
+
+    transform: translateY(-2px);
+}
+
+
+
+/* =========================================
+   RODAPÉ
+   ========================================= */
+
+footer {
+    background-color: #222222;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 25px 0;
+}
+
+
+footer p {
+    font-size: 14px;
+}
+
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+
+    .servicos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+
+/* =========================================
+   CELULAR
+   ========================================= */
+
+@media (max-width: 600px) {
+
+
+    /* CABEÇALHO */
+
+    .cabecalho {
+        height: auto;
+
+        padding: 15px 0;
+    }
+
+
+    .cabecalho-conteudo {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .logo img {
+        width: 160px;
+
+        height: 60px;
+    }
+
+
+    .menu {
+        gap: 18px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .menu a {
+        font-size: 14px;
+    }
+
+
+    .menu-whatsapp {
+        padding: 10px 16px;
+    }
+
+
+
+    /* BANNER */
+
+    .hero {
+        min-height: 500px;
+
+        background-position: center;
+    }
+
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+
+    .hero p {
+        font-size: 17px;
+    }
+
+
+
+    /* SOBRE */
+
+    .sobre {
+        padding: 60px 0;
+    }
+
+
+    .sobre-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .sobre-imagem {
+        height: 280px;
+    }
+
+
+    .sobre-texto h2 {
+        font-size: 30px;
+    }
+
+
+
+    /* SERVIÇOS */
+
+    .servicos {
+        padding: 60px 0;
+    }
+
+
+    .servicos h2 {
+        font-size: 30px;
+    }
+
+
+    .servicos-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .servico-imagem {
+        height: 220px;
+    }
+
+
+
+    /* CONTATO */
+
+    .contato {
+        padding: 60px 0;
+    }
+
+
+    .contato h2 {
+        font-size: 28px;
+    }
+
+
+
+    /* REDES SOCIAIS */
+
+    .redes-sociais {
+        padding: 18px 0;
+    }
+
+
+    .icone-social {
+        width: 30px;
+
+        height: 30px;
+
+        font-size: 16px;
+    }
+
+}
